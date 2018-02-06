@@ -25,7 +25,9 @@ __pure_set_default pure_color_blue (set_color blue)
 __pure_set_default pure_color_yellow (set_color yellow)
 __pure_set_default pure_color_cyan (set_color cyan)
 __pure_set_default pure_color_gray (set_color 93A1A1)
+__pure_set_default pure_color_magenta (set_color magenta)
 __pure_set_default pure_color_normal (set_color normal)
+__pure_set_default pure_color_magenta (set_color magenta)
 
 __pure_set_default pure_username_color $pure_color_gray
 __pure_set_default pure_host_color $pure_color_gray
@@ -137,8 +139,8 @@ function fish_prompt
   # Save previous exit code
   set -l exit_code $status
 
-  # Set default color symbol to green meaning it's all good!
-  set -l color_symbol $pure_color_green
+  # Set default color symbol to magenta meaning it's all good!
+  set -l color_symbol $pure_color_magenta
 
   # Handle previous failed command
   if test $exit_code -ne 0
